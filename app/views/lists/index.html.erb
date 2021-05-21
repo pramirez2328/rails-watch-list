@@ -1,0 +1,22 @@
+<div class="container">
+<h1 class="text-center mt-5 blue">LIST OF MOVIES!</h1>
+<table id="table" class="table ">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">NAME</th>
+
+
+    </tr>
+  </thead>
+  <tbody >
+   <%@lists.each do |list|%>
+    <tr class="tr">
+      <th scope="row"><%=list.id%></th>
+      <td class="td"><%=list.name%></td>
+    </tr>
+   <%end%>
+  </tbody>
+</table>
+
+ <%= link_to "return", movies_path %>

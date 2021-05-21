@@ -1,0 +1,25 @@
+<div class="container d-flex flex-column justify-content-around align-items-center mt-5 border border-primary p-5">
+  <%= form_for(@movie) do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :overview %>
+    <%= f.text_field :overview %>
+  </div>
+  <div>
+    <%= f.label :poster_url %>
+    <%= f.text_field :poster_url%>
+  </div>
+  <div>
+    <%= f.label :rating %>
+    <%= f.text_field :rating%>
+  </div>
+   <div class="btn btn-primary" >
+     <%= f.submit%>
+   </div>
+
+  <% end %>
+  <p><%= link_to "return", movies_path %></p>
+</div>

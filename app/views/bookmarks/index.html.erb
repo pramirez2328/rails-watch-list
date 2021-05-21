@@ -1,0 +1,20 @@
+<div class="container">
+<h1 class="text-center mt-5 blue">LIST OF BOOKMARK!</h1>
+<table id="table" class="table ">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">BOOKMARK</th>
+    </tr>
+  </thead>
+  <tbody >
+   <%@bookmarks.each do |bookmark|%>
+    <tr class="tr">
+      <th scope="row"><%=bookmark.id%></th>
+      <td class="td"><%=bookmark.comment%></td>
+    </tr>
+   <%end%>
+  </tbody>
+</table>
+
+ <%= link_to "return", movies_path %>

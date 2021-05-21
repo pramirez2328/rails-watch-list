@@ -1,0 +1,11 @@
+<div class="container d-flex flex-column justify-content-center align-items-center mt-5 border border-primary pt-5">
+  <p>
+    <span>List name: </span> <%=@list.name%></p>
+    <span>Movie id: </span> <%=@list.id%></p>
+  </p>
+
+  <%= link_to 'Check the name and id', lists_path(params[:id]) %> |
+
+  <%= link_to "return", movies_path %>
+
+</div>

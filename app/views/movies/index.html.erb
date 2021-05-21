@@ -1,0 +1,25 @@
+<div class="container">
+<h1 class="text-center mt-5 blue">WELCOME TO MOVIELAND!</h1>
+<p class="text-center create"><%= link_to "Add a movie", new_movie_path %></p>
+<table id="table" class="table ">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Overview</th>
+      <th scope="col">Poster Url</th>
+      <th scope="col">Rating</th>
+    </tr>
+  </thead>
+  <tbody >
+   <%@movies.each do |movie|%>
+    <tr class="tr">
+      <th scope="row"><%=movie.id%></th>
+      <td class="td"><%= link_to movie.title, movie_path(movie)%></td>
+      <td class="td"><%=movie.overview%></td>
+      <td class="td"> <a href="<%=movie[:poster_url]%>">Poster</a> </td>
+      <td class="td"><%=movie.rating%></td>
+    </tr>
+   <%end%>
+  </tbody>
+</table>

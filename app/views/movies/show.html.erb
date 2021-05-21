@@ -1,0 +1,13 @@
+<div class="container d-flex flex-column justify-content-center align-items-center mt-5 border border-primary pt-5">
+  <p><span>Movie: </span> <%=@movie[:title]%></p>
+  <p><span>Overview: </span> <%=@movie[:overview]%></p>
+  <p><span>URL: </span> <a href="<%=@movie[:poster_url]%>"> <%=@movie[:title]%> poster</a> </p>
+  <p><span>Rating: </span> <%="⭐" * @movie[:rating]%></p>
+   <p class="m-3">
+      <%= link_to 'Create a name', new_list_path %>
+    </p>
+    <p >
+      <%= link_to 'Create a bookmark', new_list_bookmark_path(params[:id]) %>
+    </p>
+  <p><%= link_to "return", movies_path %></p>
+</div>

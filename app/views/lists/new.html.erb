@@ -1,0 +1,7 @@
+<div class="container d-flex flex-column justify-content-around align-items-center mt-5 border border-primary p-5">
+  <%= simple_form_for [ @list ] do |f| %>
+    <%= f.input :name %>
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+  <% end %>
+
+</div>

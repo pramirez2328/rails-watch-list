@@ -1,0 +1,12 @@
+<div class="container d-flex flex-column justify-content-center align-items-center mt-5 border border-primary pt-5">
+  <p>
+    <span>Bookmark: </span> <%=@bookmark.comment%></p>
+    <span>Movie id: </span> <%=@bookmark.movie_id%></p>
+    <span>List id: </span> <%=@bookmark.list_id%></p>
+
+  </p>
+
+   <%= link_to 'Check the bookmarks', bookmarks_path(params[:id]) %> |
+
+  <%= link_to "return", movies_path %>
+</div>

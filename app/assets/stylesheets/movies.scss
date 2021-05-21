@@ -1,0 +1,26 @@
+// Place all the styles related to the movies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+table#table {
+  border-collapse: separate !important;
+  padding: 1rem;
+  color: white !important;
+  border: 1px blue solid;
+}
+.tr:hover {
+  background-color: rgb(185, 186, 204);
+  color: black;
+}
+
+.blue {
+  color: blue !important;
+  font-family: fantasy;
+  font-size: 4rem;
+  text-shadow: 0px 2px 3px white !important;
+}
+
+.create {
+  color: aqua;
+  font-size: larger;
+}
